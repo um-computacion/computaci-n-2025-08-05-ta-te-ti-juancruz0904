@@ -1,6 +1,5 @@
 from tablero import Tablero
 
-
 class Tateti:
     def __init__(self):
         self.turno = "X"
@@ -45,4 +44,3 @@ class Tateti:
                 if cell == "":
                     return False
         return not self.hay_ganador()
-

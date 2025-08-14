@@ -1,4 +1,5 @@
 from tateti import Tateti
+from tablero import PosOcupadaException
 
 def main():
     print("Bienvenidos al Tateti")
@@ -39,9 +40,10 @@ def main():
                 continue
 
             juego.ocupar_una_de_las_casillas(fil, col)
+        except PosOcupadaException as e:
+            print(e)
         except Exception as e:
             print(e)
-
 
 if __name__ == '__main__':
     main()
