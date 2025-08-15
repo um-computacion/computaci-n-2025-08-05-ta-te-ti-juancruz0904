@@ -12,7 +12,7 @@ def main():
             print(f"| {row[0] if row[0] else ' '} | {row[1] if row[1] else ' '} | {row[2] if row[2] else ' '} |")
             print("-------------")
 
-        # Lógica para verificar ganador o empate
+        # Corrección: La lógica del ganador y empate se verifica a través del objeto 'juego'
         if juego.hay_ganador():
             print(f"¡El jugador {juego.turno} ha ganado!")
             break
